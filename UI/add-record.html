@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>WeLeaks</title>
+</head>
+
+<body>
+    <div class="header" id="myTopnav">
+        <a href="index.html" class="logo">WeLeaks</a>
+        <div class="header-right profile">
+            <a class="" href="" onclick="document.getElementById('createrecord').style.display='block'">Create a Record</a>
+
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+            <div class="dropdown">
+                <button class="dropbtn">Godwin Ekuma
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="opennav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div class="add-record">
+        <div class="addrecord-container">
+            <form>
+                    <label for="recordtype">
+                            Record Type
+                            </label>
+                <select id="recordtype" name="recordtype" required>
+                    <option value="redflag">Red Flag</option>
+                    <option value="intervention">Intervention</option>
+                </select>
+                <label for="title">
+                    Title
+                </label>
+                <input type="text" id="title" name="title" placeholder="Enter Title" required>
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Describe this record" style="min-height:200px"
+                    required></textarea>
+
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder=Enter Location>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
