@@ -8,19 +8,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
 
 .nav-container{
   display: flex;
@@ -41,7 +28,7 @@ body {
   padding: 20px 10px;
 }
 
-.header a {
+.header a{
   float: left;
   color: black;
   text-align: center;
@@ -52,9 +39,11 @@ body {
   border-radius: 4px;
 }
 
+
 .header a.logo {
   font-size: 18px;
   font-weight: bold;
+  color: #563D7C;
 }
 
 .header a:hover {
@@ -74,7 +63,11 @@ body {
 .header .icon {
   display: none;
 }
-
+.header-right.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 600px) {
   
   .header-right a {
@@ -84,6 +77,9 @@ body {
   }
   .header-right {
     float: none;
+  }
+  .header-right.profile{
+    float: right !important;
   }
   .header a.icon {
     float: right;
@@ -101,8 +97,15 @@ body {
     text-align: left;
   }
   .modal-content {
-    width: 90%;
+    width: 90% !important;
   }
+  .addrecord-container{
+    margin: 5%;
+  }
+}
+
+.addrecord-container label{
+  color: #fff;
 }
 
 .hero{
@@ -144,7 +147,7 @@ body {
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], select, textarea {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -161,7 +164,7 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: #563D7C;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -171,7 +174,7 @@ button {
   opacity: 0.9;
 }
 .signupbutton{
-  background-color: #4CAF50;
+  background-color: #563D7C;
   color: #fff !important;
   padding: 8px 10px !important;
   margin: 0px 8px;
@@ -278,6 +281,160 @@ hr {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
-  text-align: center;
+  text-align: left;
   background-color: #f1f1f1;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: #563D7C !important;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.profile-column {
+  float: left;
+  width: 50%;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .profile-column {
+      width: 100%;
+  }
+  .profile-column.one{
+    margin-right: 0px;
+  }
+  .profile-column.two{
+    margin-left: 0px;
+  }
+}
+
+.profilestat{
+  margin: auto;
+}
+
+.profile-column.one{
+  margin-right: 10px;
+}
+
+.profile-column.two{
+  margin-left: 10px;
+}
+.profile.row{
+  display: flex;
+}
+
+/* .profilestats{
+  display: flex;
+} */
+
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: inherit;
+  color: #563D7C;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+h2{
+  color: #563D7C;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.add-record{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #563D7C;
 }

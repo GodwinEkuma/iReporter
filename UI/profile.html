@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>WeLeaks</title>
+</head>
+
+<body>
+    <div class="header" id="myTopnav">
+        <a href="index.html" class="logo">WeLeaks</a>
+        <div class="header-right profile">
+                <a class="" href="" onclick="document.getElementById('createrecord').style.display='block'">Create a Record</a>
+
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+            <div class="dropdown">
+                <button class="dropbtn">Godwin Ekuma
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="opennav()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+        </div>
+    </div>
+    <div class="row profile">
+        <div class="profile-column one">
+            <div class="profilestats">
+                <h2>Red Flags</h2>
+                <h4>Total Created: <span>10</span></h4>
+                <h4> Draft: <span>2</span></h4>
+                <h4>Under Investigation: <span>4</span></h4>
+                <h4>Resolved: <span>2</span></h4>
+                <h4>Rejected: <span>2</span></h4>
+            </div>
+        </div>
+        <div class="profile-column two">
+            <div class="profilestats">
+                <h2>Interventions</h2>
+                <h4>Total Created: <span>10</span></h4>
+                <h4> Draft: <span>2</span></h4>
+                <h4>Under Investigation: <span>4</span></h4>
+                <h4>Resolved: <span>2</span></h4>
+                <h4>Rejected: <span>2</span></h4>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="">
+        <div class="tab row" style="margin-bottom:0px;">
+            <button class="tablinks" onclick="opentab(event, 'redflag')" id="defaultOpen">My Red Flags</button>
+            <button class="tablinks" onclick="opentab(event, 'interventions')">My Interventions</button>
+          </div>
+          
+          <!-- Tab content -->
+          <div id="redflag" class="tabcontent">
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                      <img src="./images/gandollars.jpg" alt="" style="width:100%">
+                      <h2>Gandollars</h2>
+                      <p>Contractors share public funds with government officials</p>
+                      <p class="date">Reported On: 23-11-2018</p>
+                      <p><button>View More</button></p>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                      <img src="./images/gandollars.jpg" alt="" style="width:100%">
+                      <h2>Gandollars</h2>                      
+                      <p>Contractors share public funds with government officials</p>
+                      <p class="date">Reported On: 23-11-2018</p>
+                      <p><button>View More</button></p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                      <img src="./images/gandollars.jpg" alt="" style="width:100%">
+                      <h2>Gandollars</h2>
+                      <p>Contractors share public funds with government officials</p>
+                      <p class="date">Reported On: 23-11-2018</p>
+                      <p><button>View More</button></p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                      <img src="./images/gandollars.jpg" alt="" style="width:100%">
+                      <h2>Gandollars</h2>
+                      <p>Contractors share public funds with government officials</p>
+                      <p class="date">Reported On: 23-11-2018</p>
+                      <p><button>View More</button></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="interventions" class="tabcontent">
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                      <img src="./images/badroad.jpg" alt="" style="width:100%">
+                      <h2>Bad Road in Lagos</h2>
+                      <p>Contractors share public funds with government officials</p>
+                      <p class="date">Reported On: 23-11-2018</p>
+                      <p>Location: <span>Ikeja, Lagos</span></p>
+                      <p><button>View More</button></p>
+                  </div>
+                </div>
+              
+                <div class="column">
+                  <div class="card">
+                      <img src="./images/badroad.jpg" alt="" style="width:100%">
+                      <h2>Bad Road in Lagos</h2>
+                      <p>Contractors share public funds with government officials</p>
+                      <p class="date">Reported On: 23-11-2018</p>
+                      <p>Location: <span>Ikeja, Lagos</span></p>
+                      <p><button>View More</button></p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                      <img src="./images/badroad.jpg" alt="" style="width:100%">
+                      <h2>Bad Road in Lagos</h2>
+                      <p>Contractors share public funds with government officials</p>
+                      <p class="date">Reported On: 23-11-2018</p>
+                      <p>Location: <span>Ikeja, Lagos</span></p>
+                      <p><button>View More</button></p>
+                  </div>
+                </div>
+                
+                <div class="column">
+                  <div class="card">
+                      <img src="./images/badroad.jpg" alt="" style="width:100%">
+                      <h2>Bad Road in Lagos</h2>
+                      <p>Contractors share public funds with government officials</p>
+                      <p class="date">Reported On: 23-11-2018</p>
+                      <p>Location: <span>Ikeja, Lagos</span></p>
+                      <p><button>View More</button></p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+     <script src="js/index.js"></script>
+      <script>
+      document.getElementById("defaultOpen").click();
+      </script>
+</body>
+
+</html>

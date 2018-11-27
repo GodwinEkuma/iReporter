@@ -13,10 +13,10 @@
 
 <body>
   <div class="header" id="myTopnav">
-    <a href="#default" class="logo">WeLeaks</a>
+    <a href="index.html" class="logo">WeLeaks</a>
     <div class="header-right">
-      <a class="" href="#home">Red Flags</a>
-      <a href="#contact">Interventions</a>
+      <a class="" href="redflags.html">Red Flags</a>
+      <a href="interventions.html">Interventions</a>
       <a href="#about" onclick="document.getElementById('id02').style.display='block'">Sign In</a>
       <a href="#about" class="signupbutton" onclick="document.getElementById('id01').style.display='block'">Sign Up</a>
       <a href="javascript:void(0);" class="icon" onclick="opennav()">
@@ -27,7 +27,7 @@
   <section class="redflag-hero">
     <div class="redflag-hero-image">
       <div class="hero-text">
-        <h1>If you see something</h1>
+        <h2>If you see something</h2>
         <p>Say something</p>
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Get started</button>
       </div>
@@ -40,7 +40,7 @@
   <div class="column">
     <div class="card">
         <img src="./images/gandollars.jpg" alt="" style="width:100%">
-        <h1>Gandollars</h1>
+        <h2>Gandollars</h2>
         <p class="date">Reported On: 23-11-2018</p>
         <p>Contractors share public funds with government officials</p>
         <p><button>View More</button></p>
@@ -50,7 +50,7 @@
   <div class="column">
     <div class="card">
         <img src="./images/gandollars.jpg" alt="" style="width:100%">
-        <h1>Gandollars</h1>
+        <h2>Gandollars</h2>
         <p class="date">Reported On: 23-11-2018</p>
         <p>Contractors share public funds with government officials</p>
         <p><button>View More</button></p>
@@ -60,7 +60,7 @@
   <div class="column">
     <div class="card">
         <img src="./images/gandollars.jpg" alt="" style="width:100%">
-        <h1>Gandollars</h1>
+        <h2>Gandollars</h2>
         <p class="date">Reported On: 23-11-2018</p>
         <p>Contractors share public funds with government officials</p>
         <p><button>View More</button></p>
@@ -70,7 +70,7 @@
   <div class="column">
     <div class="card">
         <img src="./images/gandollars.jpg" alt="" style="width:100%">
-        <h1>Gandollars</h1>
+        <h2>Gandollars</h2>
         <p class="date">Reported On: 23-11-2018</p>
         <p>Contractors share public funds with government officials</p>
         <p><button>View More</button></p>
@@ -81,9 +81,15 @@
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     <form class="modal-content">
       <div class="container">
-        <h1>Sign Up</h1>
+        <h2>Sign Up</h2>
         <p>Please fill in this form to create an account.</p>
         <hr>
+        <label for="fname"><b>Firstname</b></label>
+        <input type="text" placeholder="Enter Firstname" name="fname" required>
+        <label for="lname"><b>Firstname</b></label>
+        <input type="text" placeholder="Enter Lastame" name="lname" required>
+        <label for="oname"><b>Other Names</b></label>
+        <input type="text" placeholder="Enter Other Names" name="oname" >
         <label for="email"><b>Email</b></label>
         <input type="text" placeholder="Enter Email" name="email" required>
 
